@@ -3,7 +3,7 @@
         "fecha_jornada": "12/12/2016",
         "partidos": [{
                 "id": 0,
-                "equipo_local": "Puebla",
+                "equipo_local": "Chivas",
                 "equipo_visitante": "Pumas",
                 "status": "por jugar",
                 "marcador_local": 0,
