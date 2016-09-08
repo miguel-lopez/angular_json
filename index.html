@@ -1,0 +1,44 @@
+<!DOCTYPE  html>
+<!--ng-app hace referencia al nombre de nuestro modulo-->
+<html lang="es" ng-app="app">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" ng-controller="appController">
+                <div class="col-lg-12">
+                        <div ng-repeat="data in datos">
+                            <h1 class="subheader">JORNADA:  {{data.num_jornada}}</h1>
+                            <h2>Fecha: {{data.fecha_jornada}}</h2>
+                            <br/>
+                            <div ng-repeat="partido in data.partidos" class="row">
+                                <div class="col-md-2">
+                                    <p>{{partido.equipo_local}}</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>{{partido.marcador_local}}</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="vs">VS</p>
+                                    <p><u>{{partido.status}}</u></p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>{{partido.marcador_visitante}}</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>{{partido.equipo_visitante}}</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+            <script type="text/javascript" src="js/angular_resource.js"></script>
+            <script type="text/javascript" src="js/app.js"></script>
+        </div>
+    </body>
+</html>
