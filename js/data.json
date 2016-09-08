@@ -1,0 +1,68 @@
+[{
+        "num_jornada": 1,
+        "fecha_jornada": "12/12/2016",
+        "partidos": [{
+                "id": 0,
+                "equipo_local": "Puebla",
+                "equipo_visitante": "Pumas",
+                "status": "por jugar",
+                "marcador_local": 0,
+                "marcador_visitante": 0,
+                "logo_local": "img/puebla.jpg",
+                "logo_visitante": "img/pumas.jpg"
+            }, {
+                "id": 1,
+                "equipo_local": "Toluca",
+                "equipo_visitante": "Tigres",
+                "status": "jugando",
+                "marcador_local": 2,
+                "marcador_visitante": 1,
+                "logo_local": "img/toluca.jpg",
+                "logo_visitante": "img/tigres.jpg"
+            }, {
+                "id": 2,
+                "equipo_local": "Cruz Azul",
+                "equipo_visitante": "America",
+                "status": "Terminado",
+                "marcador_local": 0,
+                "marcador_visitante": 1,
+                "logo_local": "img/cruzazul.jpg",
+                "logo_visitante": "img/tigres.jpg"
+            }
+        ]
+
+    },
+    {
+        "num_jornada": 2,
+        "fecha_jornada": "19/12/2016",
+        "partidos": [{
+                "id": 0,
+                "equipo_local": "Puebla",
+                "equipo_visitante": "Pumas",
+                "status": "por jugar",
+                "marcador_local": 0,
+                "marcador_visitante": 0,
+                "logo_local": "img/puebla.jpg",
+                "logo_visitante": "img/pumas.jpg"
+            }, {
+                "id": 1,
+                "equipo_local": "Toluca",
+                "equipo_visitante": "Tigres",
+                "status": "jugando",
+                "marcador_local": 2,
+                "marcador_visitante": 1,
+                "logo_local": "img/toluca.jpg",
+                "logo_visitante": "img/tigres.jpg"
+            }, {
+                "id": 2,
+                "equipo_local": "Cruz Azul",
+                "equipo_visitante": "America",
+                "status": "Terminado",
+                "marcador_local": 0,
+                "marcador_visitante": 1,
+                "logo_local": "img/cruzazul.jpg",
+                "logo_visitante": "img/tigres.jpg"
+            }
+        ]
+
+    }]
