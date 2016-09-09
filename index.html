@@ -16,20 +16,34 @@
                             <h2>Fecha: {{data.fecha_jornada}}</h2>
                             <br/>
                             <div ng-repeat="partido in data.partidos" class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <p>{{partido.equipo_local}}</p>
                                 </div>
-                                <div class="col-md-2">
-                                    <p>{{partido.marcador_local}}</p>
+                                <div class="col-md-2 col-sm-2">
+                                    <div class="row">
+                                        <div class ="col-sm-4">
+                                            <p>{{partido.marcador_local}}</p>
+                                        </div>
+                                        <div id ="gol_local_{{partido.id}}" class ="col-sm-4 goal">
+                                            <p>¡GOOL!</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-2 col-sm-2">
                                     <p class="vs">VS</p>
                                     <p><u>{{partido.status}}</u></p>
                                 </div>
-                                <div class="col-md-2">
-                                    <p>{{partido.marcador_visitante}}</p>
+                                <div class="col-md-2 col-sm-2">
+                                    <div class="row">
+                                        <div class ="col-sm-4">
+                                            <p>{{partido.marcador_visitante}}</p>
+                                        </div>
+                                        <div id ="gol_visitante_{{partido.id}}" class ="col-sm-4 goal">
+                                            <p>¡GOOL!</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-2 col-sm-2">
                                     <p>{{partido.equipo_visitante}}</p>
                                 </div>
                             </div>

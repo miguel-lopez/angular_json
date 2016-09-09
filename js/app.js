@@ -17,12 +17,15 @@ app.controller('appController', function ($scope, $http) {
                     //console.log("RESULT",$scope.result[0]);
 
                     $scope.partidos = $scope.result[0].partidos;
+
                     angular.forEach($scope.partidos, function (value, key) {
+
                         $scope.idPartido = value.id;
                         if (value.status === "jugando") {
                             var marcador_local = value.marcador_local;
                             var marcador_visitante = value.marcador_visitante;
                             if (marcador_local > marcador_local_temp) {
+                              
                                 alert("¡GOOOOOOL DE: "+ value.equipo_local);
                                 marcador_local_temp = marcador_local;
                             }
@@ -31,7 +34,7 @@ app.controller('appController', function ($scope, $http) {
                                 marcador_visitante_temp = marcador_visitante;
                             }
                         }
-                    });
+                      });
 
                     console.log('Fetched data!');
                 });
