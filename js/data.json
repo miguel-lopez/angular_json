@@ -6,10 +6,10 @@
                 "equipo_local": "Chivas",
                 "equipo_visitante": "Pumas",
                 "status": "por jugar",
-                "marcador_local": "-",
-                "marcador_visitante": "-",
-                "logo_local": "img/puebla.jpg",
-                "logo_visitante": "img/pumas.jpg"
+                "marcador_local": 0,
+                "marcador_visitante": 0,
+                "logo_local": "img/chivas.png",
+                "logo_visitante": "img/pumas.png"
             }, {
                 "id": 1,
                 "equipo_local": "Toluca",
@@ -17,8 +17,8 @@
                 "status": "jugando",
                 "marcador_local": 0,
                 "marcador_visitante": 0,
-                "logo_local": "img/toluca.jpg",
-                "logo_visitante": "img/tigres.jpg"
+                "logo_local": "img/toluca.png",
+                "logo_visitante": "img/tigres.png"
             }, {
                 "id": 2,
                 "equipo_local": "Cruz Azul",
@@ -26,8 +26,8 @@
                 "status": "Terminado",
                 "marcador_local": 0,
                 "marcador_visitante": 1,
-                "logo_local": "img/cruzazul.jpg",
-                "logo_visitante": "img/tigres.jpg"
+                "logo_local": "img/cruz.png",
+                "logo_visitante": "img/america.png"
             }
         ]
 
@@ -42,8 +42,8 @@
                 "status": "por jugar",
                 "marcador_local": 0,
                 "marcador_visitante": 0,
-                "logo_local": "img/puebla.jpg",
-                "logo_visitante": "img/pumas.jpg"
+                "logo_local": "img/puebla.png",
+                "logo_visitante": "img/pumas.png"
             }, {
                 "id": 1,
                 "equipo_local": "Toluca",
@@ -51,8 +51,8 @@
                 "status": "jugando",
                 "marcador_local": 2,
                 "marcador_visitante": 1,
-                "logo_local": "img/toluca.jpg",
-                "logo_visitante": "img/tigres.jpg"
+                "logo_local": "img/toluca.png",
+                "logo_visitante": "img/tigres.png"
             }, {
                 "id": 2,
                 "equipo_local": "Cruz Azul",
@@ -60,8 +60,8 @@
                 "status": "Terminado",
                 "marcador_local": 0,
                 "marcador_visitante": 1,
-                "logo_local": "img/cruzazul.jpg",
-                "logo_visitante": "img/tigres.jpg"
+                "logo_local": "img/cruz.png",
+                "logo_visitante": "img/america.png"
             }
         ]
 

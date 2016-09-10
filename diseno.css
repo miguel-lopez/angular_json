@@ -1,0 +1,71 @@
+div.margen {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #0B0B3B;
+    clear: left;
+    text-align: center;
+}
+
+section {
+    float: left;
+    max-width: 600px;
+    padding: 1em;
+}
+
+aside {
+	  float: right;
+    margin-left: 200px;
+    border-left: 0px solid gray;
+    padding: 4em;
+    overflow: hidden;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+strong.body{
+
+	font-size:20px;
+}
+
+h1{ 	color: white;
+	font-size: 45px;
+
+}
+
+h2{
+	color: red;
+	font-size: 28px;
+    text-align: center;
+}
+h3{
+	color: red;
+	font-size: 28px;
+
+}
+	td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+body{
+  background-color: white;
+}
+h6{
+  font-size: 45px;
+}
+h7{
+  font-size: 30px;
+  color: green;
+}

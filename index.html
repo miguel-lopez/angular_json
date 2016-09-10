@@ -5,24 +5,27 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        	<link rel="stylesheet" type="text/css"href="diseno.css" />
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
+      <div class="margen">
+      <header><h1>Marcador Liga MX</h1></header>
         <div class="container">
             <div class="row" ng-controller="appController">
                 <div class="col-lg-12">
                         <div ng-repeat="data in datos">
-                            <h1 class="subheader">JORNADA:  {{data.num_jornada}}</h1>
-                            <h2>Fecha: {{data.fecha_jornada}}</h2>
+                            <h2 class="subheader">JORNADA:  {{data.num_jornada}}</h2>
+                            <h3>Fecha: {{data.fecha_jornada}}</h3>
                             <br/>
                             <div ng-repeat="partido in data.partidos" class="row">
                                 <div class="col-md-2 col-sm-2">
-                                    <p>{{partido.equipo_local}}</p>
+                                  <img src={{partido.logo_local}} style="width:48px;height:48px;"> <p>{{partido.equipo_local}}</p>
                                 </div>
                                 <div class="col-md-2 col-sm-2">
                                     <div class="row">
                                         <div class ="col-sm-4">
-                                            <p>{{partido.marcador_local}}</p>
+                                          <h6><p>{{partido.marcador_local}}</p></h6>
                                         </div>
                                         <div id ="gol_local_{{partido.id}}" class ="col-sm-4 goal">
                                             <p>¡GOOL!</p>
@@ -30,13 +33,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-2">
-                                    <p class="vs">VS</p>
+                                    <h7><p class="vs">VS</p></h7>
                                     <p><u>{{partido.status}}</u></p>
                                 </div>
                                 <div class="col-md-2 col-sm-2">
                                     <div class="row">
                                         <div class ="col-sm-4">
-                                            <p>{{partido.marcador_visitante}}</p>
+                                            <h6><p>{{partido.marcador_visitante}}</p></h6>
                                         </div>
                                         <div id ="gol_visitante_{{partido.id}}" class ="col-sm-4 goal">
                                             <p>¡GOOL!</p>
@@ -44,7 +47,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-sm-2">
-                                    <p>{{partido.equipo_visitante}}</p>
+                                      <img src={{partido.logo_visitante}} style="width:48px;height:48px;"> <p>{{partido.equipo_visitante}}</p>
                                 </div>
                             </div>
                         </div>
@@ -54,5 +57,8 @@
             <script type="text/javascript" src="js/angular_resource.js"></script>
             <script type="text/javascript" src="js/app.js"></script>
         </div>
+
+
     </body>
+          <footer>Copyright &copy; Daniel, Alexis &amp; Mike </footer>
 </html>
